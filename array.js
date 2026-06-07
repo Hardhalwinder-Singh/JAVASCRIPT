@@ -27,7 +27,7 @@ console.log(array);
 array.indexOf(10); // returns the index of the first occurrence of 10
 console.log(array.indexOf(10));
 
-console.log(array[1]);
+console.log("value at 1 : " + array[1]);
 
 array.splice(1,2); // removes 2 elements starting from index 1
 console.log(array);
@@ -39,7 +39,7 @@ array.splice(1,3,20);   // removes 3 elements starting from index 1 and adds the
 console.log(array);
 
 array.push(30,40,50); // adds multiple elements to the end of the array
-console.log(array);
+console.log( " BEFORE SUMM OF ALL ELEMENTS : " + array);
 console.log(array.reduce((accumulator, currentValue) => accumulator + currentValue)); // sums all the elements in the array
 //means acc= acc+currentValue
 
@@ -85,7 +85,8 @@ for(let i=0;i<sortingArray.length;i++)
     }
    
 }
-console.log(sortingArray);
+console.log(
+ "SORTED ARRAY : " + sortingArray);
 
 
 

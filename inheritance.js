@@ -18,5 +18,5 @@ class Child extends Person{
 
 let child = new Child("childaa", 23);
 
-console.log(child.no + child.ae);
+console.log( "hereeeeeeeeeeeeee : " +child.no + child.ae);
 child.bark();

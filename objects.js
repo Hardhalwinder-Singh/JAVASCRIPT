@@ -11,8 +11,8 @@ let person = {
 }
 let human = {
 
-    firstName:"olaaa",
-    lastName:"it"
+    firstNaame:"olaaa",
+    lastNamaae:"it"
 }
 
 
@@ -20,7 +20,7 @@ console.log(person.firstName);
 console.log(person['lastName']);
 
 
-console.log({...person, ...human});
+console.log("Logging both objects together : " ,   {...person, ...human});
 
 let person2 = {...person, ...human};
 console.log(person2);
@@ -29,7 +29,7 @@ console.log(person2);
 person.manyName="hewwwww";
 
 console.log(person.manyName);
-
+    
 delete person.manyName;
 
 
@@ -39,7 +39,11 @@ console.log("manyName" in person);
 
 for(let key in person)
 {
+    if(person[key] === 24){
    console.log(person[key]);
+   
+}
+console.log(key);
 }
 
 
